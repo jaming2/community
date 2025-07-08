@@ -1,0 +1,164 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.postsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.header {
+  background: var(--primary-color);
+  padding: 0.6rem 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: var(--shadow);
+  border-bottom: 1px solid var(--gold-accent);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.logo img {
+  height: 34px;
+  filter: invert(1);
+  margin-right: 0.4rem;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navLinks li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 1rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navLinks li a:hover {
+  color: var(--accent-color);
+}
+
+.navLinks li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background: var(--accent-color);
+  transition: width 0.3s ease;
+}
+
+.navLinks li a:hover::after {
+  width: 100%;
+}
+
+.navLinks li a.active {
+  color: var(--accent-color);
+}
+
+.navLinks li a.active::after {
+  width: 100%;
+}
+
+.authLinks {
+  display: flex;
+  gap: 10px;
+}
+
+.authLink {
+  text-decoration: none;
+  color: var(--text-color);
+  background-color: var(--accent-color);
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.authLink:hover {
+  background-color: #2563eb;
+}
+
+.searchBar {
+  display: flex;
+  border: 1px solid var(--gold-accent);
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.searchBar input {
+  border: none;
+  background: transparent;
+  outline: none;
+  color: var(--text-color);
+  font-size: 1rem;
+  padding: 0.5rem 0.8rem;
+  width: 280px;
+}
+
+.searchBar input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.searchBar button {
+  background: var(--accent-color);
+  border: none;
+  padding: 0.4rem 0.8rem;
+  color: var(--text-color);
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  border-left: 1px solid var(--gold-accent);
+}
+
+.searchBar button:hover {
+  background: #2563eb;
+}
+
+.footer {
+  padding: 1.2rem;
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+  font-size: 0.95rem;
+  text-align: center;
+  border-top: 1px solid var(--gold-accent);
+  box-shadow: var(--shadow);
+}
+
+.navRight {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}

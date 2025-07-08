@@ -1,0 +1,110 @@
+.hero {
+  padding: 5rem 2rem 5rem 2rem; /* 상단 패딩 제거, 하단 패딩 유지 */
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  font-family: "Arial Black", sans-serif;
+  text-align: center;
+  margin-top: 0; /* 추가: 상단 마진 제거 */
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  margin-top: 0; /* 추가: h1의 상단 마진 제거 */
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.ctaBtn {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.ctaBtn:hover {
+  background-color: #ff0055;
+  color: #fff;
+}
+
+.recentPostsSection {
+  padding: 20px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.recentPostsSection h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: var(--primary-color);
+}
+
+.postsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.header {
+  background: #2c3e50;
+  padding: 0.5rem 2rem;
+  margin-bottom: 0; /* 추가: 하단 마진 제거 */
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  align-items: center;
+  flex: 1;
+}
+
+.menu {
+  flex: 2;
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin: 0; /* 추가: ul 기본 마진 제거 */
+  padding: 0; /* 추가: ul 기본 패딩 제거 */
+}
+
+.login {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  gap: 2rem;
+  margin: 0; /* 추가: ul 기본 마진 제거 */
+  padding: 0; /* 추가: ul 기본 패딩 제거 */
+}
+
+.menu li a,
+.login li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.menu li a:hover,
+.login li a:hover {
+  text-decoration: underline;
+}
+
+.menu li a.active,
+.login li a.active {
+  text-decoration: underline;
+}
